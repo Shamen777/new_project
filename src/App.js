@@ -13,6 +13,7 @@ import News from './compnents/news/news';
 import Contacts from './compnents/contacts/contacts';
 import Tehnolog from './compnents/tehnolog/tehnolog';
 import Main from './compnents/main/main';
+import NewsCard from './compnents/news/newsCard';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/products" component={Products} />
         <Route path="/about" component={About} />
         <Route path="/news" component={News} />
+        <Route path='/news/:id' component={NewsCard} />
         <Route path="/contacts" component={Contacts} />
         <Route path="/tehnolog" component={Tehnolog} />
       </Switch>
